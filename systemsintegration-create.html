@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4><b>Myles Wirth</b></h4>
+    <p class="w3-text-grey">Portfolio for LIBR 509</p>
+  </div>
+  <iframe src = "main-menu.html" height="600px" width="100%" style="border:none;" scrolling="none"></iframe>
+ 
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px; margin-right:15%">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+      <div class="w3-padding w3-container"> 
+       <a href="index.html" style="text-decoration:none;"><h1><b>LIBR 509: Foundations of Resource <br>Description and Knowledge Organization</b></h1></a>
+        <div class="w3-bottombar">
+        </div>
+      </div>    
+  </header>
+  
+  <!-- Item Title, Image, Description -->
+    <div class="w3-container"><div class="w3-margin-right w3-bottombar">
+    <p style="font-size:22px;"><b>Systems Integration - Create</b></p>
+       <iframe src="content/systemsintegration-create.pdf" height=600px width=100% style="border:none; background-color: grey;" scrolling="no"></iframe>
+       <div class="w3-container w3-bottombar" style="margin-left:75px; margin-right:75px;">
+        <p style="text-align:center;"><b><a href="content/systemsintegration-create.pdf">Download .pdf</a></p></b>
+        <div style="background-color: rgb(228, 228, 228);">
+        <div class="w3-padding" style="margin:50px">
+        <br>
+          <p>
+          For my final assignment, I designed a library system for the anarcho-syndicalist Odonian people on the moon Anarres in Ursula K. Leguin's <i>The Dispossessed</i>. Presented as a piece of fan-fiction, this integration plays with each of the systems we've studied in this course, as I do my best to refract them through the prism of Odonian philosophy.
+          </p>
+
+          <p>
+            I eschewed the use of a category system altogether, as linear sorting came with inherently hierarchical implications. I instead imagined that sorting is arbitrarily performed by patrons, who are responsible for recording the shelf position of books upon returning them.
+          </p>
+
+          <p>
+            My imagined content schema demoted the author and publisher below the physical dimensions of the resource, representing the Odonian aversion to "egoism". Taking inspiration from my analysis of the Anarchist Library, I devised a hybrid subject heading system that included both reader tags and a topic thesaurus as separate attributes. This retained the collectivist spirit of tagging while also giving my anarchist librarians something to do - furthermore, disparities between the two allowed me to suggest the differing priorities between librarians, authors, and readers. <i>Principles of Simultaneity</i>, Shevek's debut publication from the novel, has the author-assigned tags "Physics, Astrophysics, Spacetime, Simultaneity, Sequency, General Field Theory of Time"; however, I imagined a non-physicist librarian trimming these down to just the tidier and mainstream "Physics, Astrophysics, Spacetime, Simultaneity". As it is a key point in the novel that <i>Principles of Simultaneity</i> is only published due to its political significance - an example of Odonian science - this librarian also took the liberty of adding "Odonian Science" to the front of the list.
+          </p>
+
+          <p>
+            Perhaps most elaborate of all is my hypothetical data format for this system, Contingency Stenograph. Conceived as a sort of "reverse-MARC", I imagined the computer-coordinated society of the Odonians developing a data format to store digital information on paper in the event of computer failures, a likely prospect in the early years of settlement on an inhospitable moon. As the novel also notes the scarcity of paper on Anarres, this format would also need to be extremely information-dense. I sketched out the better part of a 65-glyph alphabet to illustrate what this might look like, and considered how such a format might be regarded by librarians as the problems it was designed to address began to subside. 
+          </p>
+        <br>
+        </div>
+        </div>
+    </div>
+    </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

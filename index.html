@@ -18,16 +18,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br>
   <div class="w3-container">
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <!--<img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>-->
     <h4><b>Myles Wirth</b></h4>
     <p class="w3-text-grey">Portfolio for LIBR 509</p>
   </div>
-  <iframe src = "main-menu.html" height="stretch" width="100%" style="border:none;" scrolling="no"></iframe>
+  <iframe src = "main-menu.html" height="600px" width="100%" style="border:none;" scrolling="none"></iframe>
  
 </nav>
 
@@ -36,15 +35,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px; margin-right:15%">
-
+  
   <!-- Header -->
   <header id="portfolio">
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-padding-16 w3-container">
-    <h1><b>LIBR 509: Foundations of Resource <br>Description and Knowledge Organization</b></h1>
-    <div class="w3-section w3-bottombar">
-    </div>
-
+      <div class="w3-padding w3-container">
+        <h1><b>LIBR 509: Foundations of Resource <br>Description and Knowledge Organization</b></h1>
+        <div class="w3-bottombar">
+        </div>
+      </div>    
+  </header>
 
   <!-- First Row -->
   <div class="w3-row-padding">
@@ -55,7 +55,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         
        <div class="w3-container w3-white">
         <p><b>Classification System - Create</b></p></a>
-        <p>This is an example of a course item.</p>
+        <p>A classification system for tracking progress painting a tabletop miniature collection.</p>
       </div>
     </div>
 
@@ -65,7 +65,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
        <div class="w3-container w3-white">
        <p><b>Controlled Vocabulary - Create</b></p></a>
-        <p>This is an example of a course item.</p>
+        <p>A thesaurus of episode themes from season 3 of <i>Star Trek: Deep Space Nine</i>.</p>
       </div>
     </div>
 
@@ -75,7 +75,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
       <div class="w3-container w3-white">
        <p><b>Content Schema - Create</b></p></a>
-        <p>This is an example of a course item.</p>
+        <p>A content schema for a database of video game characters.</p>
       </div>
   </div>
 </div>
@@ -87,7 +87,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <img src="image/classification-analyze.png" style="width:100%;  height:100%">
          <div class="w3-container w3-white">
         <p><b>Classification System - Analyze</b></p></a>
-        <p>This is an example of a course item.</p>
+        <p>An analysis of the Brian Deer Classification System - BC variant.</p>
       </div>
     </div>
 
@@ -96,7 +96,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <img src="image/controlledvocabulary-analyze.png" style="width:100%;  height:100%">  
          <div class="w3-container w3-white">
         <p><b>Controlled Vocabulary - Analyze</b></p></a>
-        <p>This is an example of a course item.</p>
+        <p>An analysis of the Library of Congress Subject Headings.</p>
       </div>
     </div>
 
@@ -105,7 +105,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <img src="image/contentschema-analyze.png" style="width:100%;  height:100%">  
         <div class="w3-container w3-white">
        <p><b>Content Schema - Analyze</b></p></a>
-        <p>This is an example of a course item.</p>
+        <p>An analysis of the Open Rules for Cataloging (ORC).</p>
       </div>
   </div>
   </div>
@@ -117,7 +117,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <img src="image/dataformat-analyze.png" style="width:100%;  height:100%">   
         <div class="w3-container w3-white">
         <p><b>Data Format - Analyze</b></p></a>
-        <p>This is an example of a course item.</p>
+        <p>An analysis of the Bibliographic Framework (BIBFRAME).</p>
       </div>
     </div>
 
@@ -126,7 +126,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <img src="image/systemsintegration-analyze.png" style="width:100%;  height:100%">  
         <div class="w3-container w3-white">
        <p><b>Systems Integration - Analyze</b></p></a>
-        <p>This is an example of a course item.</p>
+        <p>An analysis of the Anarchist Library.</p>
       </div>
     </div>
 
@@ -135,24 +135,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <img src="image/systemsintegration-create.png" style="width:100%;  height:100%">    
       <div class="w3-container w3-white">
        <p><b>Systems Integration - Create</b></p></a>
-        <p>This is an example of a course item.</p>
+        <p>A set of imagined library systems for Ursula K. Leguin's <i>The Dispossessed</i>.</p>
       </div>
   </div>
   
   </div>
 
 
-  <!-- Images of Me -->
-  <div class="w3-row-padding w3-padding-16" id="about">
-    <p>End of Page</p>
-  </div>
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-
-    <p>End of Page</p>
-
-  
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <div class="w3-black w3-center w3-padding-24"></div>
 
 <!-- End page content -->
 </div>
